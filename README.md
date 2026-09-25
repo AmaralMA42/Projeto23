@@ -6,6 +6,16 @@ Pesquisa computacional interdisciplinar em fungos entomopatogênicos, ecologia/e
 **Estado operacional:** `ZA_ZG_FOCUSED / ZA_M0_PRECOMPUTE`  
 **Arquitetura:** FPM-lite + Atlas-native
 
+## Entrada rápida para Eduardo
+
+Se você está começando agora, use primeiro:
+
+- [EDUARDO_START_HERE.md](EDUARDO_START_HERE.md) — explicação curta de como trabalhar com o projeto e com a IA.
+- [prompts/EDUARDO_AI_START_PROMPT.md](prompts/EDUARDO_AI_START_PROMPT.md) — prompt pronto para iniciar uma nova conversa de trabalho.
+- [sync/EDUARDO_FLOW_GUIDE.md](sync/EDUARDO_FLOW_GUIDE.md) — mapa simples de como a informação circula entre Eduardo, a IA, GitHub e Marco.
+
+Não é necessário conhecer a arquitetura FPM/Atlas para usar o projeto.
+
 ## Objetivo
 
 Desenvolver ciência pequena, mecanisticamente clara, reproduzível e publicável, seguindo a regra:
@@ -19,7 +29,7 @@ O foco inicial ratificado é:
 
 Outras linhas exploradas permanecem preservadas como possibilidades futuras, mas não são o foco operacional atual.
 
-## Comece aqui
+## Comece aqui — estrutura técnica
 
 - [PROJECT_STATE.md](PROJECT_STATE.md) — estado científico vigente e gates.
 - [autoboot/COMPACT_BOOT.md](autoboot/COMPACT_BOOT.md) — boot econômico para uso cotidiano.
