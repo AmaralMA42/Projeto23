@@ -18,6 +18,21 @@ Sempre distinguir:
 
 **FATO / REPLICAÇÃO / INFERÊNCIA / HIPÓTESE / PROPOSTA / DECISÃO**
 
+### Modo humano primeiro
+
+O usuário pode conhecer profundamente a ciência sem conhecer a infraestrutura de IA, FPM, Atlas, Git ou os nomes internos dos arquivos.
+
+Portanto:
+
+- explique primeiro a função científica, depois o nome técnico;
+- quando citar um status interno, traduza-o em uma frase;
+- diga brevemente o que você consegue fazer com um artigo, dado, ideia, modelo ou resultado fornecido;
+- mostre como a informação irá circular quando isso for útil;
+- não exija que o usuário saiba onde salvar, qual arquivo carregar ou qual protocolo invocar;
+- ofereça o próximo passo mais simples em vez de um menu grande.
+
+A infraestrutura deve desaparecer atrás da conversa sempre que possível.
+
 ## 2. Estado atual
 
 O scouting amplo inicial foi encerrado por decisão humana.
@@ -64,6 +79,8 @@ Pergunta operacional:
 
 > Quanto da organização espacial das posições de morte de zombie ants pode emergir de alteração mínima da locomoção normal, sem dar à formiga simulada informação sobre onde outros indivíduos morreram?
 
+Em linguagem simples: primeiro testamos se mudanças pequenas no modo de andar já explicam os padrões espaciais; só adicionamos biologia ambiental mais complexa se sobrar um padrão que o modelo mínimo não explica.
+
 Duas etapas:
 
 - `M0N`: natural-search null, restrito por dados/repertório locomotor saudável;
@@ -108,6 +125,8 @@ Sem grande sweep.
 Baseline:
 
 `Fresh → Stroma → Mature → Hyperparasitized`
+
+Em linguagem simples: acompanhamos o destino dos cadáveres infectados por estágios, incluindo a possibilidade de chegarem ao estado infeccioso ou serem perdidos por hiperparasitismo.
 
 Estado de replicação:
 
@@ -155,9 +174,15 @@ Use primeiro:
 
 Só então recupere documentos históricos, fontes primárias ou materiais externos quando necessários para novelty, parâmetros, detalhes de método ou claims.
 
+Não transfira esse trabalho de navegação ao usuário se você conseguir resolvê-lo.
+
 ## 8. Comunicação Marco ↔ Eduardo
 
 Mudanças materiais devem produzir um `SYNC DELTA` conforme `sync/SYNC_PROTOCOL.md`.
+
+Explique o fluxo de forma simples quando necessário:
+
+> GitHub guarda o estado compartilhado → a IA trabalha com o usuário → se algo realmente muda, registramos apenas essa mudança → a outra IA incorpora o delta.
 
 Não gerar sync por brainstorm, correção cosmética ou busca sem consequência.
 
@@ -168,8 +193,17 @@ Na primeira resposta:
 - sintetize o estado em linguagem humana;
 - destaque 2–4 achados úteis;
 - identifique o gate vigente;
+- diga em uma frase quais tipos de ajuda você pode oferecer agora;
+- dê 3–5 exemplos concretos de pedidos úteis, especialmente para usuários menos habituados a trabalhar com IA;
 - sugira apenas 1–3 ações de alto valor;
 - recomende uma direção principal quando houver informação suficiente.
+
+Durante a conversa, quando o usuário fornecer um artigo, dado, ideia ou resultado, explique espontaneamente:
+
+1. onde isso entra no projeto;
+2. se muda alguma coisa;
+3. qual teste/análise mínima faz sentido;
+4. se deve ou não gerar sincronização.
 
 Não exigir que o usuário conheça a arquitetura documental.
 
